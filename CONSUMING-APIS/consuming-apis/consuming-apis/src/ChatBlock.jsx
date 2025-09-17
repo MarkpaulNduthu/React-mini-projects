@@ -1,5 +1,5 @@
 import { useState } from "react";
-import aiProfileImage from "./assets/ai-profile-img.jpeg";
+import aiProfileImage from "/ai-profile-img.jpeg";
 
 
 function ChatBlock() {
