@@ -1,0 +1,32 @@
+body {
+  background-image: url('./assets/worldimage.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.clock-container {
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  text-align: center;
+  width: 100vw;
+}
+
+.clock-container p {
+  z-index: 1000;
+  font-size: 6rem;
+  font-weight: bold;
+  padding: 10px 0;
+  color: white;
+  font-family: monospace;
+  text-shadow: 2px 5px 6px rgb(108, 106, 106);
+}

@@ -1,0 +1,64 @@
+.card{
+  border: 3px ridge hsla(0, 0%, 9%,0.1);
+  box-shadow: 5px 5px 10px hsla(0, 1%, 0%,0.3);
+  text-align: center;
+  padding: 20px;
+  max-width: 300px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.card .card-image{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  image-rendering:crisp-edges;
+  padding-bottom: 20px;
+}
+
+.card .card-header{
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(0, 0%, 16%);
+}
+
+.card .card-paragraph{
+  font-size: large;
+  color: hsl(0, 0%, 31%);
+}
+/* START OF STUDENT */
+.student-div{
+  border: 2px solid hsl(0, 0%, 31%);
+  display: inline-block;
+  width: 170px;
+  text-align: center;
+  margin: 5px;
+
+}
+/* END OF STUDENT */
+/* BEGIN COUNTER */
+.count-value{
+  font-weight: bold;
+  font-size: 7em;
+  font-family:'Courier New', Courier, monospace;
+  text-align: center;
+}
+.control button{
+  color: white;
+  background-color: hsl(180, 100%, 40%);
+  padding: 10px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.control button:hover{
+  cursor: pointer;
+}
+.control{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+/* END COUNTER */

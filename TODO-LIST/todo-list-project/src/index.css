@@ -1,0 +1,100 @@
+body{
+  background-color: hsl(0, 0%, 10%);
+}
+.to-do-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.to-do-div .input-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper{
+  margin-top: 15px;
+}
+
+.to-do-div .input-div input{
+  padding: 5px;
+  color: black;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  height: 20px;
+}
+.to-do-div .input-div button{
+  padding: 5px;
+  border-radius: 5px;
+  width: 50px;
+  border: 2px solid black;
+  margin-left: -16.4%;
+  background-color: hsl(160, 100%, 30%);
+  color: white;
+  font-weight: bold;
+}
+.to-do-div .input-div button:hover{
+  cursor: pointer;
+  background-color: hsl(160, 100%, 20%);
+}
+
+.task{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  width: 400px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'arial',sans-serif;
+}
+#delete{
+  background-color: hsl(0, 92%, 66%);
+  width: 70%;
+}
+.task .controls button{
+  padding: 5px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  font-family: 'arial',sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.task .controls button:hover{
+  cursor: pointer;
+}
+
+.task .controls #delete:hover{
+  background-color: hsl(0, 56%, 40%);
+}
+
+.task .controls #up:hover,#down:hover{
+  background-color:hsl(160, 100%, 30%);
+}
+
+#up ,#down{
+  width: 30px;
+  height: 30px;
+  background-color:hsl(160, 100%, 40%);
+}
+.controls{
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+.task p{
+  width: 70%;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'arial',sans-serif;
+  font-size: 20px;
+  margin: 13px;
+}

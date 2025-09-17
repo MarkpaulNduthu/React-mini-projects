@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url('src/assets/ocean.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.chatBlock {
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-section {
+  border: 2px solid black;
+  width: 60%;
+  height: 90%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.message-holder {
+  flex-grow: 1;
+  margin: 0px -8px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.323);
+  overflow-y: auto;
+}
+
+.controls #user-query {
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 0px 10px;
+  font-size: 16px;
+  background: transparent;
+  color: hsla(0, 0%, 100%, 0.80);
+  font-weight: bold;
+  font-style: normal;
+  font-family: monospace, Arial;
+  outline: none;
+}
+
+.controls button {
+
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(53, 53, 241, 1);
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: rgba(53, 53, 241, 0.95);
+}
+
+.controls #user-query::placeholder {
+  color: hsla(0, 0%, 100%, 0.80);
+  font-weight: bold;
+  font-style: normal;
+  font-family: monospace, Arial;
+}
+.message-holder #user-message {
+  text-align: right;
+  margin: 10px 0px 10px auto;
+  padding: 10px 45px 10px 10px;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  border-radius: 10px;
+  width: fit-content;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+.message-holder #spring-model-message {
+  text-align: left;
+  margin: 10px 0px;
+  padding: 10px 45px 10px 10px;
+  background-color: rgba(108, 117, 125, 0.8);
+  color: white;
+  width: fit-content;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+.message-holder::-webkit-scrollbar {
+  width: 8px;
+}
+
+.message-holder::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.message-holder::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.message-holder::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.message-holder::-webkit-scrollbar-track:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.profile img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid white;
+  object-fit: cover;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.profile span {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px black;
+}
+.green-dot {
+  height: 10px;
+  width: 10px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.profile-details p {
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px black;
+  margin: 2px 0px;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
